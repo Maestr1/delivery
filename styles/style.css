@@ -1,0 +1,117 @@
+/* montserrat-300 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""),
+    url("../fonts/montserrat-v24-latin_cyrillic-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v24-latin_cyrillic-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/montserrat-v24-latin_cyrillic-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v24-latin_cyrillic-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-600 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""),
+    url("../fonts/montserrat-v24-latin_cyrillic-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v24-latin_cyrillic-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("../fonts/montserrat-v24-latin_cyrillic-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v24-latin_cyrillic-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.page {
+  max-width: 1440px;
+  min-width: 1100px;
+  margin: 0 auto;
+}
+
+.container {
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+/* ----------------Header styles---------------- */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 25px;
+}
+.header__nav {
+}
+.header__nav-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 13px;
+  list-style: none;
+}
+.header__nav-item {
+  margin-right: 40px;
+}
+
+.header__nav-item:last-child {
+  margin-right: 0;
+}
+
+.header__nav-link {
+  font-family: "Montserrat";
+  text-decoration: none;
+  line-height: 20px;
+  color: black;
+}
+.logo {
+}
+.header__logo {
+  width: 112px;
+}
+.header__info {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.header__schedule {
+  margin-right: 40px;
+  text-decoration: underline;
+  font-family: "Montserrat";
+  line-height: 20px;
+}
+.contact {
+  /* padding-left: 55px; */
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contact__icon {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  background: url(../images/phone.svg) no-repeat left center;
+  filter: drop-shadow(0px 9px 21px #F58656);
+}
+.hero__contact {
+}
