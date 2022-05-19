@@ -89,18 +89,19 @@
 .header__info {
   display: flex;
   align-items: center;
-  padding-bottom: 5px;
 }
 .header__schedule {
-  margin-right: 40px;
+  padding-right: 40px;
   text-decoration: underline;
   font-family: "Montserrat";
   line-height: 20px;
 }
 .contact {
+  display: flex;
+  align-items: center;
   /* padding-left: 55px; */
   padding-top: 7px;
-  padding-bottom: 7px;
+  padding-bottom: 6px;
   font-family: "Montserrat";
   font-size: 18px;
   font-weight: 700;
@@ -108,10 +109,11 @@
 
 .contact__icon {
   display: inline-block;
+  padding-right: 16px;
   width: 33px;
   height: 33px;
   background: url(../images/phone.svg) no-repeat left center;
-  filter: drop-shadow(0px 9px 21px #F58656);
+  filter: drop-shadow(0px 3px 5px rgba(245, 134, 86, .5));
 }
 .hero__contact {
 }
