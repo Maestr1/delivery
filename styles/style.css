@@ -582,20 +582,4 @@
   .header__schedule {
     font-size: 14px;
   }
-
-  .dishes__table {
-    /* justify-content: center; */
-  }
-
-  .dishes__cell {
-    /* margin-right: 40px; */
-  }
-
-  .dishes__cell:nth-child(3n) {
-    /* margin-right: 0; */
-  }
-
-  .dishes__cell:last-child {
-    /* margin-right: 0; */
-  }
 }
