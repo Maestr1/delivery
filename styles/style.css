@@ -222,7 +222,7 @@
   color: #f87848;
 }
 
-.hero__btn {
+.btn_type_hero {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -237,8 +237,18 @@
 /* ----------------Dishes styles---------------- */
 
 .dishes {
+  position: relative;
   padding-top: 140px;
   text-align: center;
+  background: url(../images/dishes-icons.svg) no-repeat top 160px center;
+}
+
+.basket {
+  position: absolute;
+  top: 21px;
+  right: 15px;
+  width: 308px;
+  height: 166px;
 }
 
 .dishes__tabs {
@@ -282,8 +292,8 @@
   color: white;
 }
 
-
-.ui-state-active, .ui-state-focus {
+.ui-state-active,
+.ui-state-focus {
   outline: transparent;
 }
 
@@ -298,31 +308,74 @@
 .dishes__cell {
 }
 
-.cell__pic {
-  width: 170px;
-}
 .cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-bottom: 10px;
   width: 260px;
+  height: 425px;
   font-family: "Montserrat";
+  background: url(../images/border.svg) no-repeat top center;
+  background-size: contain;
+}
+
+.cell__content {
+  padding-left: 25px;
+  padding-right: 15px;
+}
+
+.cell__pic {
+  padding-top: 36px;
+  padding-bottom: 30px;
+  width: 170px;
+  filter: drop-shadow(20px 10px 20px rgba(143, 92, 32, 0.1))
+    drop-shadow(10px 5px 10px rgba(143, 92, 32, 0.1));
 }
 
 .cell__title-wrap {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .cell__title {
   margin: 0;
+  padding-bottom: 8px;
   font-size: 16px;
   font-weight: 800;
 }
 .cell__subtitle {
   margin: 0;
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.4;
 }
 .cell__size {
   font-size: 12px;
 }
 .cell__price {
+  padding-bottom: 18px;
+  font-size: 24px;
+  font-weight: 300;
 }
-.cell__btn {
+.btn_type_to-basket {
+  margin-bottom: 18px;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 50%;
+  background: url(../images/to-basket-btn.svg) no-repeat;
+  /* filter: drop-shadow(0px 3px 4px rgba(205, 71, 41, 0.26)); */
+}
+
+.btn_type_more {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  background: url(../images/more.svg) no-repeat;
+  filter: drop-shadow(0px 4px 8px rgba(205, 169, 41, 0.26));
 }
