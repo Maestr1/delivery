@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
   <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"> -->
-  <link rel="stylesheet" href="/resources/demos/style.css">
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <script>
@@ -656,7 +656,30 @@
         </div>
       </div>
     </section>
+    <section class="ig ig__background">
+      <div class="ig__pic ig__pic_num_1"></div>
+      <div class="ig__pic ig__pic_num_2"></div>
+      <div class="ig__pic ig__pic_num_3"></div>
+      <div class="ig__pic ig__pic_num_4"></div>
+      <div class="ig__pic ig__pic_num_5"></div>
+      <div class="ig__pic ig__pic_num_6"></div>
+      <div class="ig__link-wrap">
+        <a href="#" class="ig__link">Instagram: <span class="ig__link-accent">@classic_kovel</span></a>
+        <div class="ig__link-border"></div>
+      </div>
+    </section>
+    <section class="call">
+      <h2 class="call__title title">Fill out the form<br>and we will call you</h2>
+      <form class="call__form form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <input type="text" name="name" placeholder="Your name" required="required" class="input form__name form__item" />
+        <input type="tel" name="tel" placeholder="Phone number" pattern="\+?[0-9\s\-\(\)]+" minlength="6" maxlength="12"
+          required="required" class="input form__phone form__item" />
+        <button type="submit" class="form__btn form__item">Сall back</button>
+      </form>
+      <div class="call__background"></div>
+    </section>
   </main>
+  <footer class="footer"></footer>
 
 </body>
 
