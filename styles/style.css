@@ -86,8 +86,11 @@
   z-index: 1;
   pointer-events: none;
   top: 50px;
+  bottom: 0;
   left: 29px;
-  width: 1385px;
+  right: 25px;
+  /* min-width: 1100px; */
+  /* max-width: 1385px; */
   height: 652px;
   background: url(../images/header-icons.svg) no-repeat;
   background-size: contain;
@@ -188,8 +191,11 @@
   pointer-events: none;
   z-index: 1;
   left: 252px;
+  right: 0;
+  /* top: 0; */
+  /* bottom: 0; */
   bottom: -99px;
-  width: 996px;
+  max-width: 996px;
   height: 590px;
   background: url(../images/pizza.png) no-repeat bottom center;
   background-size: cover;
@@ -309,6 +315,7 @@
   padding-bottom: 55px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   justify-content: space-between;
   list-style: none;
 }
@@ -317,7 +324,6 @@
   width: 260px;
   height: 425px;
 }
-
 .cell {
   display: flex;
   flex-direction: column;
@@ -395,7 +401,6 @@
   background: url(../images/more.svg) no-repeat;
   filter: drop-shadow(0px 4px 8px rgba(205, 169, 41, 0.26));
 }
-
 
 /* ----------------IG styles---------------- */
 
@@ -566,4 +571,31 @@
 
 .footer__orange-accent {
   color: #e45759;
+}
+
+@media (max-width: 1439px) {
+
+  .header__nav-link {
+    font-size: 14px;
+  }
+
+  .header__schedule {
+    font-size: 14px;
+  }
+
+  .dishes__table {
+    /* justify-content: center; */
+  }
+
+  .dishes__cell {
+    /* margin-right: 40px; */
+  }
+
+  .dishes__cell:nth-child(3n) {
+    /* margin-right: 0; */
+  }
+
+  .dishes__cell:last-child {
+    /* margin-right: 0; */
+  }
 }
