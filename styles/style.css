@@ -73,7 +73,7 @@
 /* ----------------Header styles---------------- */
 
 .header {
-  padding-top: 47px;
+  padding-top: 25px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -91,6 +91,10 @@
   height: 652px;
   background: url(../images/header-icons.svg) no-repeat;
   background-size: contain;
+}
+
+.header__nav {
+  width: 42%;
 }
 
 .header__nav-list {
@@ -114,18 +118,22 @@
   text-decoration: none;
   line-height: 20px;
   color: black;
+  transition: color .2s ease-in-out;
+}
+
+.header__nav-link:hover {
+  color: #f23f0e;
 }
 
 .header__logo {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
   width: 112px;
 }
 
 .header__info {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
+  width: 42%;
 }
 
 .header__schedule {
@@ -235,6 +243,7 @@
 .dishes {
   position: relative;
   padding-top: 140px;
+  padding-bottom: 103px;
   text-align: center;
   background: url(../images/dishes-icons.svg) no-repeat top 160px center;
 }
@@ -276,6 +285,7 @@
   font-weight: 600;
   color: black;
   background-color: #eceef6;
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }
 
 .ui-state-active .ui-tabs-anchor {
@@ -296,12 +306,16 @@
 .dishes__table {
   padding: 0;
   margin: 0;
+  padding-bottom: 55px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
 }
+
 .dishes__cell {
+  width: 260px;
+  height: 425px;
 }
 
 .cell {
@@ -310,12 +324,13 @@
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  margin-bottom: 10px;
-  width: 260px;
-  height: 425px;
   font-family: "Montserrat";
   background: url(../images/border.svg) no-repeat top center;
   background-size: contain;
+}
+
+.cell:nth-child(n + 5) {
+  margin-top: 10px;
 }
 
 .cell__content {
@@ -363,7 +378,12 @@
   border-style: none;
   border-radius: 50%;
   background: url(../images/to-basket-btn.svg) no-repeat;
-  /* filter: drop-shadow(0px 3px 4px rgba(205, 71, 41, 0.26)); */
+  transition: background 0.2s ease-in-out, filter 0.2s ease-in-out;
+}
+
+.btn_type_to-basket:hover {
+  background: url(../images/in-basket.svg) no-repeat;
+  filter: drop-shadow(0px 3px 4px rgba(205, 71, 41, 0.26));
 }
 
 .btn_type_more {
@@ -374,13 +394,18 @@
   border: none;
   background: url(../images/more.svg) no-repeat;
   filter: drop-shadow(0px 4px 8px rgba(205, 169, 41, 0.26));
+  transition: transform .2s ease-in-out, filter .2s ease-in-out;
+}
+
+.btn_type_more:hover {
+  transform: rotate(180deg);
+  filter: drop-shadow(0px -4px 8px rgba(205, 169, 41, 0.26));
 }
 
 /* ----------------IG styles---------------- */
 
 .ig {
   position: relative;
-  padding-top: 103px;
   padding-bottom: 127px;
 }
 
@@ -423,7 +448,7 @@
 .ig__link-wrap {
   position: absolute;
   left: 50%;
-  top: 143px;
+  top: 40px;
   transform: translate(-50%);
   width: 480px;
 }
@@ -470,6 +495,7 @@
   min-height: 575px;
   background-color: #f0f5fb;
 }
+
 .call__title {
   padding-top: 82px;
   padding-bottom: 42px;
@@ -477,10 +503,7 @@
   text-align: center;
   line-height: 72px;
 }
-.call__form {
-}
-.form {
-}
+
 .input {
   padding: 0;
   box-sizing: border-box;
@@ -490,10 +513,7 @@
   border: 2px solid #eceef7;
   color: #222;
 }
-.form__name {
-}
-.form__phone {
-}
+
 .form__btn {
   padding: 0;
   box-sizing: border-box;
@@ -505,6 +525,7 @@
   box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
   color: white;
 }
+
 .form__item {
   width: 260px;
   height: 60px;
@@ -521,6 +542,33 @@
   background: url(../images/call_background.png) no-repeat top center;
 }
 
+/* ----------------Footer styles---------------- */
+
 .footer {
-  height: 150px;
+  padding-top: 33px;
+  padding-bottom: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__copyright {
+  font-family: "Montserrat";
+  width: 40%;
+}
+.logo {
+}
+.footer__logo {
+  width: 95px;
+  height: 49px;
+}
+.footer__author {
+  text-align: right;
+  width: 40%;
+  font-family: "Montserrat";
+}
+.footer__accent {
+  font-weight: 700;
+}
+.footer__orange-accent {
+  color: #e45759;
 }
