@@ -59,12 +59,6 @@
   font-weight: 700;
 }
 
-.btn {
-  display: inline-block;
-  width: 33px;
-  height: 33px;
-}
-
 .paragraph {
   font-family: "Montserrat";
   margin: 0;
@@ -84,11 +78,11 @@
 .header__background {
   position: absolute;
   z-index: 1;
-  pointer-events: none;
   top: 50px;
   bottom: 0;
   left: 29px;
   right: 25px;
+  pointer-events: none;
   /* min-width: 1100px; */
   /* max-width: 1385px; */
   height: 652px;
@@ -156,8 +150,10 @@
   font-weight: 700;
 }
 
-.header__phone-icon {
+.header__btn {
   padding-right: 16px;
+  width: 33px;
+  height: 33px;
   background: url(../images/phone.svg) no-repeat left center;
   filter: drop-shadow(0px 3px 2px rgba(245, 134, 86, 0.5));
 }
@@ -219,7 +215,7 @@
   top: 342px;
   right: 141px;
   width: 415px;
-  height: 104px;
+  min-height: 104px;
   background: url(../images/arrow.svg) no-repeat top 26px left 44px;
 }
 
@@ -240,6 +236,8 @@
   position: absolute;
   left: 0;
   bottom: 0;
+  width: 33px;
+  height: 33px;
   background: url(../images/btn.svg) no-repeat left center;
   filter: drop-shadow(0px 3px 4px rgba(205, 169, 41, 0.26));
 }
@@ -254,7 +252,7 @@
   background: url(../images/dishes-icons.svg) no-repeat top 160px center;
 }
 
-.basket {
+.dishes__basket {
   position: absolute;
   top: 21px;
   right: 15px;
@@ -322,7 +320,7 @@
 
 .dishes__cell {
   width: 260px;
-  height: 425px;
+  min-height: 425px;
 }
 .cell {
   display: flex;
@@ -380,6 +378,8 @@
 }
 .btn_type_to-basket {
   margin-bottom: 18px;
+  width: 33px;
+  height: 33px;
   cursor: pointer;
   border-style: none;
   border-radius: 50%;
@@ -524,8 +524,9 @@
 }
 
 .form__item {
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 260px;
-  height: 60px;
   font-family: "Montserrat";
   border-radius: 59px;
 }
@@ -574,7 +575,6 @@
 }
 
 @media (max-width: 1439px) {
-
   .header__nav-link {
     font-size: 14px;
   }
