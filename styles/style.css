@@ -83,8 +83,6 @@
   left: 29px;
   right: 25px;
   pointer-events: none;
-  /* min-width: 1100px; */
-  /* max-width: 1385px; */
   height: 652px;
   background: url(../images/header-icons.svg) no-repeat;
   background-size: contain;
@@ -188,8 +186,6 @@
   z-index: 1;
   left: 252px;
   right: 0;
-  /* top: 0; */
-  /* bottom: 0; */
   bottom: -99px;
   max-width: 996px;
   height: 590px;
